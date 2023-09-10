@@ -27,6 +27,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.VOIDSTRUCK_SLAB.get()));
         this.dropSelf(ModBlocks.VOIDSTRUCK_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.VOIDSTRUCK_BUTTON.get());
+        this.dropSelf(ModBlocks.VOIDSTRUCK_FENCE.get());
+        this.dropSelf(ModBlocks.VOIDSTRUCK_FENCE_GATE.get());
 
     }
 

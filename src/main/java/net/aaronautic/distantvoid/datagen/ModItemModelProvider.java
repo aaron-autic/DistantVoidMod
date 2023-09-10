@@ -24,7 +24,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.OBSCURITE_INGOT);
 
         buttonItem(ModBlocks.VOIDSTRUCK_BUTTON, ModBlocks.VOIDSTRUCK_PLANKS);
+        fenceItem(ModBlocks.VOIDSTRUCK_FENCE, ModBlocks.VOIDSTRUCK_PLANKS);
 
+    }
+
+    public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  new ResourceLocation(DistantVoidMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
     public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {

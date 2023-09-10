@@ -30,6 +30,8 @@
   "block.distantvoid.voidstruck_slab": "Voidstruck Slab",
   "block.distantvoid.voidstruck_pressure_plate": "Voidstruck Pressure Plate",
   "block.distantvoid.voidstruck_button": "Voidstruck Button",
+  "block.distantvoid.voidstruck_fence": "Voidstruck Fence",
+  "block.distantvoid.voidstruck_fence_gate": "Voidstruck Fence Gate",
 
   "block.distantvoid.obscurite_block": "Obscurite Block",
   "block.distantvoid.void_stone": "Void Stone"

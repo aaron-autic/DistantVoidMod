@@ -2,6 +2,7 @@ package net.aaronautic.distantvoid.block;
 
 import net.aaronautic.distantvoid.DistantVoidMod;
 import net.aaronautic.distantvoid.item.ModItems;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -38,6 +39,13 @@ public class ModBlocks {
                     BlockBehaviour.Properties.copy(Blocks.WARPED_PRESSURE_PLATE), BlockSetType.WARPED));
     public static final RegistryObject<Block> VOIDSTRUCK_BUTTON = registerBlock("voidstruck_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_BUTTON), BlockSetType.WARPED, 2, true));
+
+    public static final RegistryObject<Block> VOIDSTRUCK_FENCE = registerBlock("voidstruck_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_FENCE)));
+
+    public static final RegistryObject<Block> VOIDSTRUCK_FENCE_GATE = registerBlock("voidstruck_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+
 
 
 

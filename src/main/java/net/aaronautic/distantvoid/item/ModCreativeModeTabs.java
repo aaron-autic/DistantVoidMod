@@ -27,6 +27,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.VOIDSTRUCK_SLAB.get());
                         output.accept(ModBlocks.VOIDSTRUCK_PRESSURE_PLATE.get());
                         output.accept(ModBlocks.VOIDSTRUCK_BUTTON.get());
+                        output.accept(ModBlocks.VOIDSTRUCK_FENCE.get());
+                        output.accept(ModBlocks.VOIDSTRUCK_FENCE_GATE.get());
                     }).build());
 
 

@@ -26,11 +26,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         buttonBlock((ButtonBlock) ModBlocks.VOIDSTRUCK_BUTTON.get(), blockTexture(ModBlocks.VOIDSTRUCK_PLANKS.get()));
         pressurePlateBlock((PressurePlateBlock) ModBlocks.VOIDSTRUCK_PRESSURE_PLATE.get(), blockTexture(ModBlocks.VOIDSTRUCK_PLANKS.get()));
 
+        fenceBlock((FenceBlock) ModBlocks.VOIDSTRUCK_FENCE.get(), blockTexture(ModBlocks.VOIDSTRUCK_PLANKS.get()));
+        fenceGateBlock((FenceGateBlock) ModBlocks.VOIDSTRUCK_FENCE_GATE.get(), blockTexture(ModBlocks.VOIDSTRUCK_PLANKS.get()));
+
 
 
         blockItem(ModBlocks.VOIDSTRUCK_STAIRS);
         blockItem(ModBlocks.VOIDSTRUCK_SLAB);
         blockItem(ModBlocks.VOIDSTRUCK_PRESSURE_PLATE);
+        blockItem(ModBlocks.VOIDSTRUCK_FENCE_GATE);
     }
 
 
