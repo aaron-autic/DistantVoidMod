@@ -1,0 +1,38 @@
+{
+  "item.distantvoid.obscurite_ingot": "Obscurite Ingot",
+
+  "creativetab.distant_void_tab": "Distant Void",
+
+
+
+  "item.distantvoid.obscurite_helmet": "Obscurite Helmet",
+  "item.distantvoid.obscurite_chestplate": "Obscurite Chestplate",
+  "item.distantvoid.obscurite_leggings": "Obscurite Leggings",
+  "item.distantvoid.obscurite_boots": "Obscurite Boots",
+
+  "item.distantvoid.obscure_cherries": "Obscure Cherries",
+
+  "block.distantvoid.petrified_log": "Petrified Log",
+  "block.distantvoid.petrified_planks": "Petrified Planks",
+  "block.distantvoid.petrified_wood": "Petrified Wood",
+  "block.distantvoid.stripped_petrified_log": "Stripped Petrified Log",
+  "block.distantvoid.stripped_petrified_wood": "Stripped Petrified Wood",
+  "block.distantvoid.petrified_stairs": "Petrified Stairs",
+  "block.distantvoid.petrified_slab": "Petrified Slab",
+
+
+  "block.distantvoid.voidstruck_log": "Voidstruck Log",
+  "block.distantvoid.voidstruck_planks": "Voidstruck Planks",
+  "block.distantvoid.voidstruck_wood": "Voidstruck Wood",
+  "block.distantvoid.stripped_voidstruck_log": "Stripped Voidstruck Log",
+  "block.distantvoid.stripped_voidstruck_wood": "Stripped Voidstruck Wood",
+  "block.distantvoid.voidstruck_stairs": "Voidstruck Stairs",
+  "block.distantvoid.voidstruck_slab": "Voidstruck Slab",
+  "block.distantvoid.voidstruck_pressure_plate": "Voidstruck Pressure Plate",
+  "block.distantvoid.voidstruck_button": "Voidstruck Button",
+
+  "block.distantvoid.obscurite_block": "Obscurite Block",
+  "block.distantvoid.void_stone": "Void Stone"
+
+
+}
