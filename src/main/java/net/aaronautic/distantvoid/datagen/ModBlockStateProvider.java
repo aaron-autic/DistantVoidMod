@@ -29,12 +29,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceBlock((FenceBlock) ModBlocks.VOIDSTRUCK_FENCE.get(), blockTexture(ModBlocks.VOIDSTRUCK_PLANKS.get()));
         fenceGateBlock((FenceGateBlock) ModBlocks.VOIDSTRUCK_FENCE_GATE.get(), blockTexture(ModBlocks.VOIDSTRUCK_PLANKS.get()));
 
-
-
         blockItem(ModBlocks.VOIDSTRUCK_STAIRS);
         blockItem(ModBlocks.VOIDSTRUCK_SLAB);
         blockItem(ModBlocks.VOIDSTRUCK_PRESSURE_PLATE);
         blockItem(ModBlocks.VOIDSTRUCK_FENCE_GATE);
+
+        horizontalBlock(ModBlocks.ORE_REFINING_STATION.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/ore_refining_station")));
     }
 
 

@@ -29,6 +29,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.VOIDSTRUCK_BUTTON.get());
                         output.accept(ModBlocks.VOIDSTRUCK_FENCE.get());
                         output.accept(ModBlocks.VOIDSTRUCK_FENCE_GATE.get());
+                        output.accept(ModBlocks.ORE_REFINING_STATION.get());
                     }).build());
 
 

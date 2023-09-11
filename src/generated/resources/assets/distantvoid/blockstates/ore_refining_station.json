@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "distantvoid:block/ore_refining_station",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "distantvoid:block/ore_refining_station"
+    },
+    "facing=south": {
+      "model": "distantvoid:block/ore_refining_station",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "distantvoid:block/ore_refining_station",
+      "y": 270
+    }
+  }
+}

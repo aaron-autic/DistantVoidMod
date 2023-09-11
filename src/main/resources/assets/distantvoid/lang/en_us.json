@@ -34,7 +34,9 @@
   "block.distantvoid.voidstruck_fence_gate": "Voidstruck Fence Gate",
 
   "block.distantvoid.obscurite_block": "Obscurite Block",
-  "block.distantvoid.void_stone": "Void Stone"
+  "block.distantvoid.void_stone": "Void Stone",
+
+  "block.distantvoid.ore_refining_station": "Ore Refining Station"
 
 
 }

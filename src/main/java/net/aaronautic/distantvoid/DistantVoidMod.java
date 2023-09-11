@@ -2,6 +2,7 @@ package net.aaronautic.distantvoid;
 
 import com.mojang.logging.LogUtils;
 import net.aaronautic.distantvoid.block.ModBlocks;
+import net.aaronautic.distantvoid.block.entity.ModBlockEntities;
 import net.aaronautic.distantvoid.item.ModCreativeModeTabs;
 import net.aaronautic.distantvoid.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -38,22 +39,16 @@ public class DistantVoidMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-
-
+        ModBlockEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
-
         MinecraftForge.EVENT_BUS.register(this);
-
-
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 
     }
-
-
 
         // You can use SubscribeEvent and let the Event Bus discover methods to call
         @SubscribeEvent

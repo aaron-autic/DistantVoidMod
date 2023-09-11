@@ -26,6 +26,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         buttonItem(ModBlocks.VOIDSTRUCK_BUTTON, ModBlocks.VOIDSTRUCK_PLANKS);
         fenceItem(ModBlocks.VOIDSTRUCK_FENCE, ModBlocks.VOIDSTRUCK_PLANKS);
 
+        complexBlock(ModBlocks.ORE_REFINING_STATION.get());
+
+    }
+
+
+
+
+
+
+
+
+    private ItemModelBuilder complexBlock(Block block) {
+        return withExistingParent(ForgeRegistries.BLOCKS.getKey(block).getPath(), new ResourceLocation(DistantVoidMod.MOD_ID,
+                "block/" + ForgeRegistries.BLOCKS.getKey(block).getPath()));
     }
 
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
