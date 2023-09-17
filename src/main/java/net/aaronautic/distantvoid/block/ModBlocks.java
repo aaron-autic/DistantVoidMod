@@ -50,6 +50,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ORE_REFINING_STATION = registerBlock("ore_refining_station",
             () -> new OreRefiningStationBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
 
+    public static final RegistryObject<Block> VOIDSTRUCK_LOG = registerBlock("voidstruck_log",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WARPED_NYLIUM).noOcclusion()));
+
 
 
 
