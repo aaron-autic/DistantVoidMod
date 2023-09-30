@@ -15,6 +15,9 @@ public class ModItems {
     public static final RegistryObject<Item> OBSCURE_CHERRIES = ITEMS.register("obscure_cherries",
             () -> new Item(new Item.Properties().food(ModFoodProperties.OBSCURE_CHERRIES)));
 
+    public static final RegistryObject<Item> OBSCURITE_GEM = ITEMS.register("obscurite_gem",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

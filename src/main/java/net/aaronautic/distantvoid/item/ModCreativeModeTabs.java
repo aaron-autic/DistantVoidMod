@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.distant_void_tab"))
                     .displayItems((displayParameters, output) -> {
                         output.accept(ModItems.OBSCURITE_INGOT.get());
+                        output.accept(ModItems.OBSCURITE_GEM.get());
                         output.accept(ModBlocks.OBSCURITE_BLOCK.get());
                         output.accept(ModItems.OBSCURE_CHERRIES.get());
                         output.accept(ModBlocks.VOIDSTRUCK_PLANKS.get());

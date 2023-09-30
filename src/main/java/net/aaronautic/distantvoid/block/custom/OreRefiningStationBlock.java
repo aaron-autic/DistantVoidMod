@@ -1,4 +1,4 @@
-package net.aaronautic.distantvoid.block.entity.custom;
+package net.aaronautic.distantvoid.block.custom;
 
 import net.aaronautic.distantvoid.block.entity.ModBlockEntities;
 import net.aaronautic.distantvoid.block.entity.OreRefiningStationBlockEntity;

@@ -1,7 +1,7 @@
 package net.aaronautic.distantvoid.block;
 
 import net.aaronautic.distantvoid.DistantVoidMod;
-import net.aaronautic.distantvoid.block.entity.custom.OreRefiningStationBlock;
+import net.aaronautic.distantvoid.block.custom.OreRefiningStationBlock;
 import net.aaronautic.distantvoid.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
@@ -14,7 +14,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.security.PrivateKey;
 import java.util.function.Supplier;
 
 public class ModBlocks {

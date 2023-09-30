@@ -1,0 +1,21 @@
+{
+  "type": "distantvoid:ore_refining",
+  "ingredients": [
+    {
+    "item": "create:sturdy_sheet"
+    }
+  ],
+  "ingredients_2": [
+    {
+      "item": "ars_nouveau:source_gem"
+    }
+  ],
+  "ingredients_3": [
+    {
+      "item": "distantvoid:obscurite_gem"
+    }
+  ],
+  "output": {
+    "item": "distantvoid:obscurite_ingot"
+  }
+}

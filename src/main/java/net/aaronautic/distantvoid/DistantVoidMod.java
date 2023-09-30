@@ -1,10 +1,15 @@
 package net.aaronautic.distantvoid;
 
+import com.hollingsworth.arsnouveau.common.lib.LibBlockNames;
 import com.mojang.logging.LogUtils;
 import net.aaronautic.distantvoid.block.ModBlocks;
 import net.aaronautic.distantvoid.block.entity.ModBlockEntities;
 import net.aaronautic.distantvoid.item.ModCreativeModeTabs;
 import net.aaronautic.distantvoid.item.ModItems;
+import net.aaronautic.distantvoid.recipe.ModRecipes;
+import net.aaronautic.distantvoid.screen.ModMenuTypes;
+import net.aaronautic.distantvoid.screen.OreRefiningStationScreen;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -39,11 +44,17 @@ public class DistantVoidMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+
+
         ModBlockEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -61,9 +72,11 @@ public class DistantVoidMod {
         public static class ClientModEvents {
             @SubscribeEvent
             public static void onClientSetup(FMLClientSetupEvent event) {
+                MenuScreens.register(ModMenuTypes.ORE_REFINING_MENU.get(), OreRefiningStationScreen::new);
 
             }
         }
     }
+
 
 

@@ -22,6 +22,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.OBSCURE_CHERRIES);
         simpleItem(ModItems.OBSCURITE_INGOT);
+        simpleItem(ModItems.OBSCURITE_GEM);
 
         buttonItem(ModBlocks.VOIDSTRUCK_BUTTON, ModBlocks.VOIDSTRUCK_PLANKS);
         fenceItem(ModBlocks.VOIDSTRUCK_FENCE, ModBlocks.VOIDSTRUCK_PLANKS);
