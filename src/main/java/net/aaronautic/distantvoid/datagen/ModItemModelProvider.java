@@ -23,6 +23,18 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.OBSCURE_CHERRIES);
         simpleItem(ModItems.OBSCURITE_INGOT);
         simpleItem(ModItems.OBSCURITE_GEM);
+        simpleItem(ModItems.MOLTEN_OBSCURITE_BUCKET);
+
+        handheldItem(ModItems.OBSCURITE_SWORD);
+        handheldItem(ModItems.OBSCURITE_PICKAXE);
+        handheldItem(ModItems.OBSCURITE_AXE);
+        handheldItem(ModItems.OBSCURITE_SHOVEL);
+        handheldItem(ModItems.OBSCURITE_HOE);
+
+        //simpleItem(ModItems.OBSCURITE_HELMET);
+        //simpleItem(ModItems.OBSCURITE_CHESTPLATE);
+        //simpleItem(ModItems.OBSCURITE_LEGGINGS);
+        //simpleItem(ModItems.OBSCURITE_BOOTS);
 
         buttonItem(ModBlocks.VOIDSTRUCK_BUTTON, ModBlocks.VOIDSTRUCK_PLANKS);
         fenceItem(ModBlocks.VOIDSTRUCK_FENCE, ModBlocks.VOIDSTRUCK_PLANKS);
@@ -30,10 +42,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         complexBlock(ModBlocks.ORE_REFINING_STATION.get());
 
     }
-
-
-
-
 
 
 
@@ -53,11 +61,17 @@ public class ModItemModelProvider extends ItemModelProvider {
                 .texture("texture",  new ResourceLocation(DistantVoidMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(DistantVoidMod.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(DistantVoidMod.MOD_ID, "item/" + item.getId().getPath()));
+                new ResourceLocation(DistantVoidMod.MOD_ID,"item/" + item.getId().getPath()));
     }
 
 }

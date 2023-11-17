@@ -36,6 +36,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.FENCE_GATES)
                 .add(ModBlocks.VOIDSTRUCK_FENCE_GATE.get());
 
+
+
     }
 
     @Override

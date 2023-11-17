@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "distantvoid:item/molten_obscurite_bucket"
+  }
+}

@@ -22,7 +22,25 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.OBSCURITE_INGOT.get());
                         output.accept(ModItems.OBSCURITE_GEM.get());
                         output.accept(ModBlocks.OBSCURITE_BLOCK.get());
+                        output.accept(ModItems.MOLTEN_OBSCURITE_BUCKET.get());
                         output.accept(ModItems.OBSCURE_CHERRIES.get());
+
+                        output.accept(ModItems.OBSCURITE_HELMET.get());
+                        output.accept(ModItems.OBSCURITE_CHESTPLATE.get());
+                        output.accept(ModItems.OBSCURITE_LEGGINGS.get());
+                        output.accept(ModItems.OBSCURITE_BOOTS.get());
+
+                        output.accept(ModItems.OBSCURITE_SWORD.get());
+                        output.accept(ModItems.OBSCURITE_PICKAXE.get());
+                        output.accept(ModItems.OBSCURITE_AXE.get());
+                        output.accept(ModItems.OBSCURITE_SHOVEL.get());
+                        output.accept(ModItems.OBSCURITE_HOE.get());
+
+                        output.accept(ModBlocks.VOIDSTRUCK_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_VOIDSTRUCK_LOG.get());
+                        output.accept(ModBlocks.VOIDSTRUCK_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_VOIDSTRUCK_WOOD.get());
+
                         output.accept(ModBlocks.VOIDSTRUCK_PLANKS.get());
                         output.accept(ModBlocks.VOIDSTRUCK_STAIRS.get());
                         output.accept(ModBlocks.VOIDSTRUCK_SLAB.get());
@@ -30,6 +48,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.VOIDSTRUCK_BUTTON.get());
                         output.accept(ModBlocks.VOIDSTRUCK_FENCE.get());
                         output.accept(ModBlocks.VOIDSTRUCK_FENCE_GATE.get());
+
+
                         output.accept(ModBlocks.ORE_REFINING_STATION.get());
                     }).build());
 

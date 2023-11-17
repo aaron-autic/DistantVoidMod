@@ -3,12 +3,16 @@ package net.aaronautic.distantvoid.datagen;
 import net.aaronautic.distantvoid.DistantVoidMod;
 import net.aaronautic.distantvoid.block.ModBlocks;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.security.MessageDigest;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -36,6 +40,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         horizontalBlock(ModBlocks.ORE_REFINING_STATION.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/ore_refining_station")));
+
+        logBlock(((RotatedPillarBlock) ModBlocks.VOIDSTRUCK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.VOIDSTRUCK_WOOD.get()), blockTexture(ModBlocks.VOIDSTRUCK_LOG.get()), blockTexture(ModBlocks.VOIDSTRUCK_LOG.get()));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_VOIDSTRUCK_LOG.get(), new ResourceLocation(DistantVoidMod.MOD_ID, "block/stripped_voidstruck_log"),
+                new ResourceLocation(DistantVoidMod.MOD_ID, "block/stripped_voidstruck_log_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_VOIDSTRUCK_WOOD.get(), new ResourceLocation(DistantVoidMod.MOD_ID, "block/stripped_voidstruck_log"),
+                new ResourceLocation(DistantVoidMod.MOD_ID, "block/stripped_voidstruck_log"));
+
+        blockItem(ModBlocks.VOIDSTRUCK_LOG);
+        blockItem(ModBlocks.VOIDSTRUCK_WOOD);
+        blockItem(ModBlocks.STRIPPED_VOIDSTRUCK_LOG);
+        blockItem(ModBlocks.STRIPPED_VOIDSTRUCK_WOOD);
+
+
     }
 
 

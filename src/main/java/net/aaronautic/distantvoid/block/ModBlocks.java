@@ -1,7 +1,9 @@
 package net.aaronautic.distantvoid.block;
 
 import net.aaronautic.distantvoid.DistantVoidMod;
+import net.aaronautic.distantvoid.block.custom.ModFlammableRotatedPillarBlock;
 import net.aaronautic.distantvoid.block.custom.OreRefiningStationBlock;
+import net.aaronautic.distantvoid.fluid.ModFluids;
 import net.aaronautic.distantvoid.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
@@ -46,11 +48,31 @@ public class ModBlocks {
     public static final RegistryObject<Block> VOIDSTRUCK_FENCE_GATE = registerBlock("voidstruck_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
+
+
+    public static final RegistryObject<Block> VOIDSTRUCK_LOG = registerBlock("voidstruck_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_STEM)));
+
+    public static final RegistryObject<Block> VOIDSTRUCK_WOOD = registerBlock("voidstruck_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_HYPHAE)));
+
+    public static final RegistryObject<Block> STRIPPED_VOIDSTRUCK_LOG = registerBlock("stripped_voidstruck_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_WARPED_STEM)));
+
+    public static final RegistryObject<Block> STRIPPED_VOIDSTRUCK_WOOD = registerBlock("stripped_voidstruck_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_WARPED_HYPHAE)));
+
+
+
+
     public static final RegistryObject<Block> ORE_REFINING_STATION = registerBlock("ore_refining_station",
             () -> new OreRefiningStationBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
 
-    public static final RegistryObject<Block> VOIDSTRUCK_LOG = registerBlock("voidstruck_log",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WARPED_NYLIUM).noOcclusion()));
+
+
+
+    public static final RegistryObject<LiquidBlock> MOLTEN_OBSCURITE_BLOCK = BLOCKS.register("molten_obscurite_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_MOLTEN_OBSCURITE, BlockBehaviour.Properties.copy(Blocks.LAVA).noLootTable()));
 
 
 

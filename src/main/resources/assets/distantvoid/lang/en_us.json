@@ -10,8 +10,17 @@
   "item.distantvoid.obscurite_leggings": "Obscurite Leggings",
   "item.distantvoid.obscurite_boots": "Obscurite Boots",
 
+  "item.distantvoid.obscurite_sword": "Obscurite Sword",
+  "item.distantvoid.obscurite_pickaxe": "Obscurite Pickaxe",
+  "item.distantvoid.obscurite_axe": "Obscurite Axe",
+  "item.distantvoid.obscurite_shovel": "Obscurite Shovel",
+  "item.distantvoid.obscurite_hoe": "Obscurite Hoe",
+
   "item.distantvoid.obscure_cherries": "Obscure Cherries",
   "item.distantvoid.obscurite_gem": "Obscurite Gem",
+
+  "item.distantvoid.molten_obscurite_bucket": "Molten Obscurite Bucket",
+  "fluid_type.distantvoid.molten_obscurite_fluid": "Molten Obscurite",
 
   "block.distantvoid.petrified_log": "Petrified Log",
   "block.distantvoid.petrified_planks": "Petrified Planks",

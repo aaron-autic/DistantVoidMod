@@ -21,11 +21,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AAA")
                 .pattern("AAA")
                 .define('A', ModItems.OBSCURITE_INGOT.get())
-                .unlockedBy("has_obscurite_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.OBSCURITE_INGOT.get()).build()))
+                .unlockedBy("has_obscurite_ingot", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.OBSCURITE_INGOT.get()).build()))
                 .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.OBSCURITE_INGOT.get(), 9)
                 .requires(ModBlocks.OBSCURITE_BLOCK.get())
-                .unlockedBy("has_obscurite_block", inventoryTrigger(ItemPredicate.Builder.item().of(ModBlocks.OBSCURITE_BLOCK.get()).build()))
+                .unlockedBy("has_obscurite_block", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.OBSCURITE_BLOCK.get()).build()))
                 .save(pWriter);
 
 

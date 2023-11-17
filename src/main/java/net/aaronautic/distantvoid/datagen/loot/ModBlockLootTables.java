@@ -32,6 +32,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.ORE_REFINING_STATION.get());
 
+        this.dropSelf(ModBlocks.VOIDSTRUCK_LOG.get());
+        this.dropSelf(ModBlocks.VOIDSTRUCK_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_VOIDSTRUCK_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_VOIDSTRUCK_WOOD.get());
+
     }
 
     @Override

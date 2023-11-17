@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "distantvoid:block/voidstruck_planks",
+    "side": "distantvoid:block/voidstruck_planks",
+    "top": "distantvoid:block/voidstruck_planks"
+  }
+}
